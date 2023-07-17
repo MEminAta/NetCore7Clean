@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "JhAg2hi1EhpEXrZdG150nnKcDdFoo9HchEm52zGn8glALerJWAWo3J5iIArwlzSScZiIYK9dTHFcSJt3Q3O+PA==",
+  "success": true,
+  "projectFilePath": "/Users/atasayar/Desktop/Proje/NetCore7Clean/Demo/Demo.csproj",
+  "expectedPackageFiles": [
+    "/Users/atasayar/.nuget/packages/autofac/6.5.0/autofac.6.5.0.nupkg.sha512",
+    "/Users/atasayar/.nuget/packages/autofac.extras.dynamicproxy/7.1.0/autofac.extras.dynamicproxy.7.1.0.nupkg.sha512",
+    "/Users/atasayar/.nuget/packages/castle.core/5.1.1/castle.core.5.1.1.nupkg.sha512",
+    "/Users/atasayar/.nuget/packages/system.diagnostics.diagnosticsource/4.7.1/system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512",
+    "/Users/atasayar/.nuget/packages/system.diagnostics.eventlog/6.0.0/system.diagnostics.eventlog.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

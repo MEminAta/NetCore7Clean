@@ -1,0 +1,17 @@
+/Users/atasayar/Desktop/Proje/NetCore7Clean/Infrastructure/bin/Debug/net7.0/Infrastructure.deps.json
+/Users/atasayar/Desktop/Proje/NetCore7Clean/Infrastructure/bin/Debug/net7.0/Infrastructure.dll
+/Users/atasayar/Desktop/Proje/NetCore7Clean/Infrastructure/bin/Debug/net7.0/Infrastructure.pdb
+/Users/atasayar/Desktop/Proje/NetCore7Clean/Infrastructure/bin/Debug/net7.0/Application.dll
+/Users/atasayar/Desktop/Proje/NetCore7Clean/Infrastructure/bin/Debug/net7.0/Domain.dll
+/Users/atasayar/Desktop/Proje/NetCore7Clean/Infrastructure/bin/Debug/net7.0/Application.pdb
+/Users/atasayar/Desktop/Proje/NetCore7Clean/Infrastructure/bin/Debug/net7.0/Domain.pdb
+/Users/atasayar/Desktop/Proje/NetCore7Clean/Infrastructure/obj/Debug/net7.0/Infrastructure.csproj.AssemblyReference.cache
+/Users/atasayar/Desktop/Proje/NetCore7Clean/Infrastructure/obj/Debug/net7.0/Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/atasayar/Desktop/Proje/NetCore7Clean/Infrastructure/obj/Debug/net7.0/Infrastructure.AssemblyInfoInputs.cache
+/Users/atasayar/Desktop/Proje/NetCore7Clean/Infrastructure/obj/Debug/net7.0/Infrastructure.AssemblyInfo.cs
+/Users/atasayar/Desktop/Proje/NetCore7Clean/Infrastructure/obj/Debug/net7.0/Infrastructure.csproj.CoreCompileInputs.cache
+/Users/atasayar/Desktop/Proje/NetCore7Clean/Infrastructure/obj/Debug/net7.0/Infrastructure.csproj.CopyComplete
+/Users/atasayar/Desktop/Proje/NetCore7Clean/Infrastructure/obj/Debug/net7.0/Infrastructure.dll
+/Users/atasayar/Desktop/Proje/NetCore7Clean/Infrastructure/obj/Debug/net7.0/refint/Infrastructure.dll
+/Users/atasayar/Desktop/Proje/NetCore7Clean/Infrastructure/obj/Debug/net7.0/Infrastructure.pdb
+/Users/atasayar/Desktop/Proje/NetCore7Clean/Infrastructure/obj/Debug/net7.0/ref/Infrastructure.dll

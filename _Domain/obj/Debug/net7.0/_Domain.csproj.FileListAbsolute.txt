@@ -1,0 +1,12 @@
+/Users/atasayar/Desktop/Proje/NetCore7Clean/_Domain/bin/Debug/net7.0/Domain.deps.json
+/Users/atasayar/Desktop/Proje/NetCore7Clean/_Domain/bin/Debug/net7.0/Domain.dll
+/Users/atasayar/Desktop/Proje/NetCore7Clean/_Domain/bin/Debug/net7.0/Domain.pdb
+/Users/atasayar/Desktop/Proje/NetCore7Clean/_Domain/obj/Debug/net7.0/_Domain.csproj.AssemblyReference.cache
+/Users/atasayar/Desktop/Proje/NetCore7Clean/_Domain/obj/Debug/net7.0/_Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/atasayar/Desktop/Proje/NetCore7Clean/_Domain/obj/Debug/net7.0/_Domain.AssemblyInfoInputs.cache
+/Users/atasayar/Desktop/Proje/NetCore7Clean/_Domain/obj/Debug/net7.0/_Domain.AssemblyInfo.cs
+/Users/atasayar/Desktop/Proje/NetCore7Clean/_Domain/obj/Debug/net7.0/_Domain.csproj.CoreCompileInputs.cache
+/Users/atasayar/Desktop/Proje/NetCore7Clean/_Domain/obj/Debug/net7.0/Domain.dll
+/Users/atasayar/Desktop/Proje/NetCore7Clean/_Domain/obj/Debug/net7.0/refint/Domain.dll
+/Users/atasayar/Desktop/Proje/NetCore7Clean/_Domain/obj/Debug/net7.0/Domain.pdb
+/Users/atasayar/Desktop/Proje/NetCore7Clean/_Domain/obj/Debug/net7.0/ref/Domain.dll

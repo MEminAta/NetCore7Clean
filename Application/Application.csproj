@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\_Domain\_Domain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Features\Roles\Commands\Get\" />
+      <Folder Include="Features\Roles\Constants\" />
+      <Folder Include="Features\SomeFeature\Commands\CreateSomeFeature\" />
+      <Folder Include="Features\SomeFeature\Constants\" />
+      <Folder Include="Features\SomeFeature\Dtos\" />
+      <Folder Include="Features\SomeFeature\Profiles\" />
+      <Folder Include="Features\SomeFeature\Rules\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Autofac.Extras.DynamicProxy" Version="7.1.0" />
+      <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+      <PackageReference Include="MediatR" Version="12.1.1" />
+      <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0" />
+      <PackageReference Include="NetCore.AutoRegisterDi" Version="2.1.0" />
+    </ItemGroup>
+
+</Project>
