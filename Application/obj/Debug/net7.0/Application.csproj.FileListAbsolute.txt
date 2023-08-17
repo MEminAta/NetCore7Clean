@@ -13,3 +13,10 @@
 /Users/atasayar/Desktop/Proje/NetCore7Clean/Application/obj/Debug/net7.0/refint/Application.dll
 /Users/atasayar/Desktop/Proje/NetCore7Clean/Application/obj/Debug/net7.0/Application.pdb
 /Users/atasayar/Desktop/Proje/NetCore7Clean/Application/obj/Debug/net7.0/ref/Application.dll
+/Users/atasayar/Desktop/Proje/NetCore7Clean/Application/bin/Debug/net7.0/Microsoft.AspNetCore.Http.Abstractions.dll
+/Users/atasayar/Desktop/Proje/NetCore7Clean/Application/bin/Debug/net7.0/Microsoft.Extensions.Localization.Abstractions.dll
+/Users/atasayar/Desktop/Proje/NetCore7Clean/Application/bin/Debug/net7.0/System.IO.Pipelines.dll
+/Users/atasayar/Desktop/Proje/NetCore7Clean/Application/bin/Debug/net7.0/Microsoft.Extensions.Features.dll
+/Users/atasayar/Desktop/Proje/NetCore7Clean/Application/bin/Debug/net7.0/Microsoft.AspNetCore.Http.Features.dll
+/Users/atasayar/Desktop/Proje/NetCore7Clean/Application/bin/Debug/net7.0/Microsoft.Net.Http.Headers.dll
+/Users/atasayar/Desktop/Proje/NetCore7Clean/Application/bin/Debug/net7.0/Microsoft.AspNetCore.Connections.Abstractions.dll

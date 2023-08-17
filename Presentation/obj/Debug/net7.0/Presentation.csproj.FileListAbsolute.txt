@@ -39,10 +39,6 @@
 /Users/atasayar/Desktop/Proje/NetCore7Clean/Presentation/obj/Debug/net7.0/Presentation.pdb
 /Users/atasayar/Desktop/Proje/NetCore7Clean/Presentation/obj/Debug/net7.0/Presentation.genruntimeconfig.cache
 /Users/atasayar/Desktop/Proje/NetCore7Clean/Presentation/obj/Debug/net7.0/ref/Presentation.dll
-/Users/atasayar/Desktop/Proje/NetCore7Clean/Presentation/bin/Debug/net7.0/Autofac.dll
-/Users/atasayar/Desktop/Proje/NetCore7Clean/Presentation/bin/Debug/net7.0/Autofac.Extras.DynamicProxy.dll
-/Users/atasayar/Desktop/Proje/NetCore7Clean/Presentation/bin/Debug/net7.0/Castle.Core.dll
-/Users/atasayar/Desktop/Proje/NetCore7Clean/Presentation/bin/Debug/net7.0/Autofac.Extensions.DependencyInjection.dll
 /Users/atasayar/Desktop/Proje/NetCore7Clean/Presentation/bin/Debug/net7.0/Azure.Core.dll
 /Users/atasayar/Desktop/Proje/NetCore7Clean/Presentation/bin/Debug/net7.0/Azure.Identity.dll
 /Users/atasayar/Desktop/Proje/NetCore7Clean/Presentation/bin/Debug/net7.0/Microsoft.Bcl.AsyncInterfaces.dll
@@ -83,3 +79,13 @@
 /Users/atasayar/Desktop/Proje/NetCore7Clean/Presentation/bin/Debug/net7.0/runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll
 /Users/atasayar/Desktop/Proje/NetCore7Clean/Presentation/bin/Debug/net7.0/Infrastructure.dll
 /Users/atasayar/Desktop/Proje/NetCore7Clean/Presentation/bin/Debug/net7.0/Infrastructure.pdb
+/Users/atasayar/Desktop/Proje/NetCore7Clean/Presentation/bin/Debug/net7.0/NetCore.AutoRegisterDi.dll
+/Users/atasayar/Desktop/Proje/NetCore7Clean/Presentation/bin/Debug/net7.0/System.Linq.Dynamic.Core.dll
+/Users/atasayar/Desktop/Proje/NetCore7Clean/Presentation/bin/Debug/net7.0/Newtonsoft.Json.dll
+/Users/atasayar/Desktop/Proje/NetCore7Clean/Presentation/bin/Debug/net7.0/System.CodeDom.dll
+/Users/atasayar/Desktop/Proje/NetCore7Clean/Presentation/bin/Debug/net7.0/FluentValidation.dll
+/Users/atasayar/Desktop/Proje/NetCore7Clean/Presentation/bin/Debug/net7.0/FluentValidation.DependencyInjectionExtensions.dll
+/Users/atasayar/Desktop/Proje/NetCore7Clean/Presentation/bin/Debug/net7.0/Humanizer.dll
+/Users/atasayar/Desktop/Proje/NetCore7Clean/Presentation/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Design.dll
+/Users/atasayar/Desktop/Proje/NetCore7Clean/Presentation/bin/Debug/net7.0/Microsoft.Extensions.DependencyModel.dll
+/Users/atasayar/Desktop/Proje/NetCore7Clean/Presentation/bin/Debug/net7.0/Mono.TextTemplating.dll

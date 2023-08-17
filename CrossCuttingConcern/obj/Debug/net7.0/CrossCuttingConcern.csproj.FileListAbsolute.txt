@@ -1,0 +1,12 @@
+/Users/atasayar/Desktop/Proje/NetCore7Clean/CrossCuttingConcern/bin/Debug/net7.0/CrossCuttingConcern.deps.json
+/Users/atasayar/Desktop/Proje/NetCore7Clean/CrossCuttingConcern/bin/Debug/net7.0/CrossCuttingConcern.dll
+/Users/atasayar/Desktop/Proje/NetCore7Clean/CrossCuttingConcern/bin/Debug/net7.0/CrossCuttingConcern.pdb
+/Users/atasayar/Desktop/Proje/NetCore7Clean/CrossCuttingConcern/obj/Debug/net7.0/CrossCuttingConcern.csproj.AssemblyReference.cache
+/Users/atasayar/Desktop/Proje/NetCore7Clean/CrossCuttingConcern/obj/Debug/net7.0/CrossCuttingConcern.GeneratedMSBuildEditorConfig.editorconfig
+/Users/atasayar/Desktop/Proje/NetCore7Clean/CrossCuttingConcern/obj/Debug/net7.0/CrossCuttingConcern.AssemblyInfoInputs.cache
+/Users/atasayar/Desktop/Proje/NetCore7Clean/CrossCuttingConcern/obj/Debug/net7.0/CrossCuttingConcern.AssemblyInfo.cs
+/Users/atasayar/Desktop/Proje/NetCore7Clean/CrossCuttingConcern/obj/Debug/net7.0/CrossCuttingConcern.csproj.CoreCompileInputs.cache
+/Users/atasayar/Desktop/Proje/NetCore7Clean/CrossCuttingConcern/obj/Debug/net7.0/CrossCuttingConcern.dll
+/Users/atasayar/Desktop/Proje/NetCore7Clean/CrossCuttingConcern/obj/Debug/net7.0/refint/CrossCuttingConcern.dll
+/Users/atasayar/Desktop/Proje/NetCore7Clean/CrossCuttingConcern/obj/Debug/net7.0/CrossCuttingConcern.pdb
+/Users/atasayar/Desktop/Proje/NetCore7Clean/CrossCuttingConcern/obj/Debug/net7.0/ref/CrossCuttingConcern.dll

@@ -15,3 +15,11 @@
 /Users/atasayar/Desktop/Proje/NetCore7Clean/Infrastructure/obj/Debug/net7.0/refint/Infrastructure.dll
 /Users/atasayar/Desktop/Proje/NetCore7Clean/Infrastructure/obj/Debug/net7.0/Infrastructure.pdb
 /Users/atasayar/Desktop/Proje/NetCore7Clean/Infrastructure/obj/Debug/net7.0/ref/Infrastructure.dll
+/Users/atasayar/Desktop/Proje/NetCore7Clean/Infrastructure/bin/Debug/net7.0/Microsoft.AspNetCore.Http.Abstractions.dll
+/Users/atasayar/Desktop/Proje/NetCore7Clean/Infrastructure/bin/Debug/net7.0/System.IO.Pipelines.dll
+/Users/atasayar/Desktop/Proje/NetCore7Clean/Infrastructure/bin/Debug/net7.0/Microsoft.Extensions.Features.dll
+/Users/atasayar/Desktop/Proje/NetCore7Clean/Infrastructure/bin/Debug/net7.0/Microsoft.AspNetCore.Http.Features.dll
+/Users/atasayar/Desktop/Proje/NetCore7Clean/Infrastructure/bin/Debug/net7.0/Microsoft.Net.Http.Headers.dll
+/Users/atasayar/Desktop/Proje/NetCore7Clean/Infrastructure/bin/Debug/net7.0/Microsoft.AspNetCore.Connections.Abstractions.dll
+/Users/atasayar/Desktop/Proje/NetCore7Clean/Infrastructure/bin/Debug/net7.0/Infrastructure.runtimeconfig.json
+/Users/atasayar/Desktop/Proje/NetCore7Clean/Infrastructure/obj/Debug/net7.0/Infrastructure.genruntimeconfig.cache

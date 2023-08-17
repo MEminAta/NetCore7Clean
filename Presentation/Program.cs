@@ -1,8 +1,6 @@
+using System.Diagnostics;
 using Application.PipelineBehaviors;
 using Application.ServiceRegistrations;
-using Application.ServiceRegistrations.Autofac;
-using Autofac;
-using Autofac.Extensions.DependencyInjection;
 using Infrastructure;
 using MediatR;
 
@@ -10,11 +8,6 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory())
-    .ConfigureContainer<ContainerBuilder>(containerBuilder =>
-    {
-        containerBuilder.RegisterModule(new AutofacBusinessModule(builder.Configuration));
-    });
 
 builder.Services.AddControllers();
 
@@ -48,8 +41,17 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
+app.UseMiddleware<ExceptionHandlerMiddleware>();
 
 app.MapControllers();
 
+var watch = new Stopwatch();
+app.Use(async (context, next) =>
+{
+    watch.Start();
+    await next(context);
+    Console.WriteLine(watch.Elapsed.TotalSeconds);
+    watch.Reset();
+});
 
 app.Run();

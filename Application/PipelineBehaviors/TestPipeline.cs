@@ -2,11 +2,17 @@ using MediatR;
 
 namespace Application.PipelineBehaviors;
 
-public class TestPipeline<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse> where TResponse : new()
+public class TestPipeline<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>
+    where TRequest : IRequest<TResponse>
 {
-    public Task<TResponse> Handle(TRequest request, RequestHandlerDelegate<TResponse> next, CancellationToken cancellationToken)
+    public async Task<TResponse> Handle(TRequest request, RequestHandlerDelegate<TResponse> next,
+        CancellationToken cancellationToken)
     {
-        Console.WriteLine("Selam");
-        return Task.FromResult(new TResponse());
+        Console.WriteLine("TestPipeLine 1");
+
+        var response = await next();
+
+        Console.WriteLine("TestPipeLine 2");
+        return response;
     }
 }

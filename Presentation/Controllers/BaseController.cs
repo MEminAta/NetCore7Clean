@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace WebApi.Controllers;
 
+[ApiController]
+[Route("[controller]")]
 public class BaseController : Controller
 {
     private IMediator? _mediator;

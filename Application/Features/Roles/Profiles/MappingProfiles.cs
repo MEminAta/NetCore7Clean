@@ -1,5 +1,6 @@
 using Application.Features.Roles.Commands.Create;
-using Application.Features.Roles.DTOs;
+using Application.Features.Roles.Queries.GetList;
+using Application.Paging;
 using AutoMapper;
 using Domain.Entities;
 
@@ -9,7 +10,9 @@ public class MappingProfiles : Profile
 {
     public MappingProfiles()
     {
-        CreateMap<Role, CreatedRoleDto>().ReverseMap();
-        CreateMap<Role, CreateRoleCommand>().ReverseMap();
+        CreateMap<Role, RoleCreatedDto>().ReverseMap();
+        CreateMap<Role, RoleCreateCommand>().ReverseMap();
+        CreateMap<IPaginate<Role>, RoleListModel>().ReverseMap();
+        CreateMap<Role, RoleListDto>().ReverseMap();
     }
 }

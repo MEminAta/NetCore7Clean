@@ -1,30 +1,29 @@
 using Domain.Entities;
 using Infrastructure.Persistence.EntityFramework.Configurations;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
+using Microsoft.EntityFrameworkCore.Diagnostics;
 
 namespace Infrastructure.Persistence.EntityFramework.Contexts;
 
 public class EfDbContext : DbContext
 {
-    private readonly IConfiguration _config;
-
     public EfDbContext(DbContextOptions<EfDbContext> options) : base(options)
     {
-        _config = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.ApplyConfiguration(new EfRoleConfiguration());
         modelBuilder.ApplyConfiguration(new EfUserConfiguration());
-        base.OnModelCreating(modelBuilder);
+        base.OnModelCreating(modelBuilder); // this thing is useless
     }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlServer(_config.GetConnectionString("Sql"));
+        optionsBuilder.ConfigureWarnings(x => x.Ignore(CoreEventId.RowLimitingOperationWithoutOrderByWarning));
     }
 
     public DbSet<User> Users { get; set; } = null!;
     public DbSet<Role> Roles { get; set; } = null!;
+    public DbSet<Permission> Permissions { get; set; } = null!;
 }
