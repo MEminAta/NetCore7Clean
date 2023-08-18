@@ -2,7 +2,7 @@ using Application.Features.Roles.Commands.Create;
 using Application.Features.Roles.Queries.GetList;
 using Application.Paging;
 using AutoMapper;
-using Domain.Entities;
+using Domain.Derived;
 
 namespace Application.Features.Roles.Profiles;
 

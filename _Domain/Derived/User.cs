@@ -1,6 +1,6 @@
 using Domain.Bases;
 
-namespace Domain.Entities;
+namespace Domain.Derived;
 
 public class User : BaseEntity<int>
 {

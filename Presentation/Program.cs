@@ -1,6 +1,8 @@
+using System.ComponentModel;
 using System.Diagnostics;
+using Application;
+using Application.Features.Roles.Rules;
 using Application.PipelineBehaviors;
-using Application.ServiceRegistrations;
 using Infrastructure;
 using MediatR;
 
@@ -53,5 +55,10 @@ app.Use(async (context, next) =>
     Console.WriteLine(watch.Elapsed.TotalSeconds);
     watch.Reset();
 });
+
+
+var entity = new MyEntity { MyProperty = false };
+entity.MyProperty = true;
+
 
 app.Run();

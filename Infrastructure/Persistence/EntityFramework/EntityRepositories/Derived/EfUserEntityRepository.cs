@@ -1,5 +1,5 @@
 using Application.IRepositories.Derived;
-using Domain.Entities;
+using Domain.Derived;
 using Infrastructure.Persistence.EntityFramework.Contexts;
 using Infrastructure.Persistence.EntityFramework.EntityRepositories.Bases;
 

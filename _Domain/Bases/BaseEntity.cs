@@ -1,4 +1,4 @@
-using Domain.Entities;
+using Domain.Derived;
 
 namespace Domain.Bases;
 

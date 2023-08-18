@@ -5,7 +5,7 @@ using FluentValidation;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Application.ServiceRegistrations;
+namespace Application;
 
 public static class ApplicationServiceRegistration
 {

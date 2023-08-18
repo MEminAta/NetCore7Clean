@@ -1,11 +1,10 @@
-using System.Linq.Dynamic.Core;
 using Application.Features.Roles.Commands.Create;
 using Application.Features.Roles.Queries.GetList;
 using Infrastructure.Persistence.EntityFramework.Contexts;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+using WebApi.Controllers.Base;
 
-namespace WebApi.Controllers;
+namespace WebApi.Controllers.Derived;
 
 public class RoleController : BaseController
 {

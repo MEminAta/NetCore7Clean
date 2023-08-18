@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Fv7qsqHRREabrhBHPw1BJwh1Vp7sNwJd9AXcA8HunvxEgjKQgiJs5U+3k7L8jqFoyaqCto+t00upKdM75JKwgw==",
+  "dgSpecHash": "VR5V+hCf4GpIksR71F4BavAWy4OHCsjbibcARQQ+pOTmoZ/VVrli8l1RBCKQT6LJlRN7+66awg2zbc/nuHH3uQ==",
   "success": true,
   "projectFilePath": "/Users/atasayar/Desktop/Proje/NetCore7Clean/Presentation/Presentation.csproj",
   "expectedPackageFiles": [
@@ -13,6 +13,7 @@
     "/Users/atasayar/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/atasayar/.nuget/packages/mediatr/12.1.1/mediatr.12.1.1.nupkg.sha512",
     "/Users/atasayar/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
+    "/Users/atasayar/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/7.0.10/microsoft.aspnetcore.authentication.jwtbearer.7.0.10.nupkg.sha512",
     "/Users/atasayar/.nuget/packages/microsoft.aspnetcore.openapi/7.0.10/microsoft.aspnetcore.openapi.7.0.10.nupkg.sha512",
     "/Users/atasayar/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "/Users/atasayar/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",

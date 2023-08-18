@@ -1,6 +1,6 @@
 using Domain.Bases;
 
-namespace Domain.Entities;
+namespace Domain.Derived;
 
 public class Role : BaseEntity<int>
 {

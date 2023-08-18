@@ -15,9 +15,13 @@
         <Folder Include="Features\Roles\Constants\" />
         <Folder Include="Features\SomeFeature\Commands\CreateSomeFeature\" />
         <Folder Include="Features\SomeFeature\Constants\" />
-        <Folder Include="Features\SomeFeature\Dtos\" />
         <Folder Include="Features\SomeFeature\Profiles\" />
+        <Folder Include="Features\SomeFeature\Queries\" />
         <Folder Include="Features\SomeFeature\Rules\" />
+        <Folder Include="Features\User\Constants\" />
+        <Folder Include="Features\User\Profiles\" />
+        <Folder Include="Features\User\Queries\" />
+        <Folder Include="Features\User\Rules\" />
     </ItemGroup>
 
     <ItemGroup>

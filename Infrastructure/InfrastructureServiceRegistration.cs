@@ -27,6 +27,7 @@ public static class InfrastructureServiceRegistration
                 options.UseSqlServer(configuration.GetConnectionString("Sql"));
             }
         );
+        Console.ResetColor();
         return services;
     }
 

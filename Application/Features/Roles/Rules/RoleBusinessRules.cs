@@ -19,3 +19,24 @@ public class RoleBusinessRules
             throw new BusinessException("Role name exists.");
     }
 }
+
+
+
+public class MyEntity
+{
+    private bool _myProperty;
+
+    public bool MyProperty
+    {
+        get => _myProperty;
+        set
+        {
+            if (_myProperty == value) return;
+            if (value)
+            {
+                Console.WriteLine("Selam :D");
+            }
+            _myProperty = value;
+        }
+    }
+}

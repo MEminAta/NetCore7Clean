@@ -1,19 +1,18 @@
 using Application.Features.Roles.Rules;
 using Application.IRepositories.Derived;
 using AutoMapper;
-using Domain.Entities;
 using MediatR;
 
 namespace Application.Features.Roles.Commands.Create;
 
 public class RoleCreateCommand : IRequest<RoleCreatedDto>
 {
+    public string Name { get; set; }
+
     public RoleCreateCommand(string name)
     {
         Name = name;
     }
-
-    public string Name { get; set; }
 
     public class RoleCreateCommandHandler : IRequestHandler<RoleCreateCommand, RoleCreatedDto>
     {
@@ -33,7 +32,7 @@ public class RoleCreateCommand : IRequest<RoleCreatedDto>
         {
             await _roleBusinessRules.RoleNameCanNotBeDuplicatedWhenInserted(request.Name);
 
-            var mappedRole = _mapper.Map<Role>(request);
+            var mappedRole = _mapper.Map<Domain.Derived.Role>(request);
             var createdRole = await _roleRepository.Add(mappedRole, ct);
             var createdRoleDto = _mapper.Map<RoleCreatedDto>(createdRole);
             return createdRoleDto;

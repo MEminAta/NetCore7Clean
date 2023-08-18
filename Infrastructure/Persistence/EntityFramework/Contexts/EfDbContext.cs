@@ -1,4 +1,5 @@
-using Domain.Entities;
+using Domain.Bases;
+using Domain.Derived;
 using Infrastructure.Persistence.EntityFramework.Configurations;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
@@ -15,6 +16,7 @@ public class EfDbContext : DbContext
     {
         modelBuilder.ApplyConfiguration(new EfRoleConfiguration());
         modelBuilder.ApplyConfiguration(new EfUserConfiguration());
+        modelBuilder.Entity<BaseEntityWithEvent<int>>().Ignore(x => x.DomainEvents);
         base.OnModelCreating(modelBuilder); // this thing is useless
     }
 
