@@ -1,44 +1,47 @@
-﻿using Infrastructure.Persistence.EntityFramework.Contexts;
-using Microsoft.EntityFrameworkCore;
+﻿using Infrastructure.Security.Encryption;
+using Infrastructure.Security.Hash;
+using Infrastructure.Security.Token.Jwt;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using NetCore.AutoRegisterDi;
+using Microsoft.IdentityModel.Tokens;
+using Security.Hash;
+using Security.Token;
 
 namespace Infrastructure;
 
 public static class InfrastructureServiceRegistration
 {
-    public static IServiceCollection AddInfrastructureServices(this IServiceCollection services,
-        IConfiguration configuration)
+    public static IServiceCollection AddInfrastructureServices(this IServiceCollection services, IConfiguration configuration)
     {
+        var tokenOptions = configuration.GetSection(nameof(TokenOptions)).Get<TokenOptions>()!;
+
         Console.Clear();
         Console.BackgroundColor = ConsoleColor.Black;
         Console.ForegroundColor = ConsoleColor.DarkGreen;
         Console.WriteLine("Interface Implementations");
         Console.ResetColor();
         Console.ForegroundColor = ConsoleColor.Gray;
-        
-        services.RegisterAssemblyPublicNonGenericClasses()
-            .Where(x => Implementations(configuration, x.Name))
-            .AsPublicImplementedInterfaces(ServiceLifetime.Scoped);
-
-        services.AddDbContext<EfDbContext>(options =>
-            {
-                options.UseSqlServer(configuration.GetConnectionString("Sql"));
-            }
-        );
+        Console.WriteLine();
         Console.ResetColor();
+
+        
+        services.AddSingleton<ITokenHelper, JwtTokenHelper>();
+        services.AddSingleton<IHashHelper, HmacHashHelper>();
+
+        services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
+        {
+            options.TokenValidationParameters = new TokenValidationParameters
+            {
+                ValidateIssuer = false,
+                ValidateAudience = false,
+                ClockSkew = TimeSpan.Zero,
+                ValidateLifetime = true,
+                ValidateIssuerSigningKey = true,
+                IssuerSigningKey = SecurityKeyHelper.CreateSecurityKey(tokenOptions.SecurityKey)
+            };
+        });
+
         return services;
-    }
-
-    private static bool Implementations(IConfiguration configuration, string name) =>
-        RepositoryImplementations(configuration, name);
-
-    private static bool RepositoryImplementations(IConfiguration configuration, string name)
-    {
-        if (!name.StartsWith(configuration["ORM"] ?? "Ef") || !name.EndsWith("EntityRepository")) return false;
-        Console.WriteLine("ORM - " + name);
-
-        return true;
     }
 }

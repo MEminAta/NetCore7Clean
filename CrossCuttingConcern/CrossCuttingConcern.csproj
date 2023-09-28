@@ -7,6 +7,43 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+        <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.7.1"/>
+        <PackageReference Include="MediatR" Version="12.1.1"/>
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.11"/>
     </ItemGroup>
+
+    <ItemGroup>
+        <EmbeddedResource Update="Globalization\Languages\Resources.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Globalization\Languages\Resources.tr-TR.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>Resources.tr-TR.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Compile Update="Globalization\Languages\Resources.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Resources.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Globalization\Languages\Resources.tr-TR.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Resources.tr-TR.resx</DependentUpon>
+        </Compile>
+
+    </ItemGroup>
+
+
+    <ItemGroup>
+      <ProjectReference Include="..\Security\Security.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Security\Security.csproj" />
+    </ItemGroup>
+
 </Project>

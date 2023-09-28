@@ -1,42 +1,22 @@
-﻿using Application.IRepositories.Derived;
-using Application.PipelineBehaviors;
+﻿using Application.Repository.Contexts;
+using CrossCuttingConcern.Exceptions.ExceptionTypes;
+using Microsoft.EntityFrameworkCore;
 
 namespace Application.Features.Roles.Rules;
 
 public class RoleBusinessRules
 {
-    private readonly IRoleRepository _roleRepository;
+    private readonly BaseDbContext _context;
 
-    public RoleBusinessRules(IRoleRepository roleRepository)
+    public RoleBusinessRules(BaseDbContext context)
     {
-        _roleRepository = roleRepository;
+        _context = context;
     }
 
-    public async Task RoleNameCanNotBeDuplicatedWhenInserted(string name)
+    public async Task RoleNameCanNotBeDuplicatedWhenInserted(string name, CancellationToken ct)
     {
-        var result = await _roleRepository.Get(x => x.Name == name);
+        var result = await _context.Roles.FirstOrDefaultAsync(x => x.Name == name, cancellationToken: ct);
         if (result != null)
-            throw new BusinessException("Role name exists.");
-    }
-}
-
-
-
-public class MyEntity
-{
-    private bool _myProperty;
-
-    public bool MyProperty
-    {
-        get => _myProperty;
-        set
-        {
-            if (_myProperty == value) return;
-            if (value)
-            {
-                Console.WriteLine("Selam :D");
-            }
-            _myProperty = value;
-        }
+            throw new RuleException("Role name exists.");
     }
 }

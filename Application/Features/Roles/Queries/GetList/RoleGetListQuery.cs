@@ -1,28 +1,33 @@
-using Application.IRepositories.Derived;
-using Application.Paging;
+using Application.Features.Roles.Queries.GetList.Dtos;
+using Application.Repository.Contexts;
+using Application.Repository.Extensions.Paging;
+using Application.Repository.Extensions.Paging.Models;
 using AutoMapper;
 using MediatR;
 
 namespace Application.Features.Roles.Queries.GetList;
 
-public class RoleGetListQuery : BasePageableRequest, IRequest<RoleListModel>
+public class RoleGetListQuery : IRequest<OffsetPaginatedModel<RoleListDto>>
 {
-    public class GetListRoleQueryHandler : IRequestHandler<RoleGetListQuery, RoleListModel>
+    public class GetListRoleQueryHandler : IRequestHandler<RoleGetListQuery, OffsetPaginatedModel<RoleListDto>>
     {
-        private readonly IRoleRepository _roleRepository;
         private readonly IMapper _mapper;
+        private readonly BaseDbContext _context;
 
-        public GetListRoleQueryHandler(IRoleRepository roleRepository, IMapper mapper)
+        public GetListRoleQueryHandler(IMapper mapper, BaseDbContext context)
         {
-            _roleRepository = roleRepository;
             _mapper = mapper;
+            _context = context;
         }
 
-        public async Task<RoleListModel> Handle(RoleGetListQuery request, CancellationToken ct)
+
+        public async Task<OffsetPaginatedModel<RoleListDto>> Handle(RoleGetListQuery request, CancellationToken ct)
         {
-            var roles = await _roleRepository.GetList(index: request.Page, size: request.PageSize, ct: ct);
-            var mappedRoleListModel = _mapper.Map<RoleListModel>(roles);
-            return mappedRoleListModel;
+            var paginatedRole = await _context.Roles
+                .Where(x => x.IsDeleted)
+                .Select(x => _mapper.Map<RoleListDto>(x))
+                .ToOffsetPaginate(10, 0);
+            return paginatedRole;
         }
     }
 }

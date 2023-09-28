@@ -1,6 +1,5 @@
 using Application.Features.Roles.Commands.Create;
 using Application.Features.Roles.Queries.GetList;
-using Infrastructure.Persistence.EntityFramework.Contexts;
 using Microsoft.AspNetCore.Mvc;
 using WebApi.Controllers.Base;
 
@@ -8,25 +7,16 @@ namespace WebApi.Controllers.Derived;
 
 public class RoleController : BaseController
 {
-    private readonly EfDbContext _context;
-
-    public RoleController(EfDbContext context)
-    {
-        _context = context;
-    }
-
-
     [HttpPost]
-    public async Task<IActionResult> Add([FromBody] RoleCreateCommand roleCreateCommand)
+    public async Task<IActionResult> Add([FromBody] RoleCreateCommand request, CancellationToken ct)
     {
-        return Created("", await Mediator.Send(roleCreateCommand));
+        return Ok(await Mediator.Send(request, ct));
     }
 
     [HttpGet]
-    public async Task<IActionResult> Get([FromBody] RoleGetListQuery roleGetListQuery)
+    public async Task<IActionResult> Get([FromBody] RoleGetListQuery request, CancellationToken ct)
     {
-        var x = await Mediator.Send(roleGetListQuery);
-        return Ok(x);
+        return Ok(await Mediator.Send(request, ct));
     }
 
 
@@ -56,4 +46,20 @@ public class RoleController : BaseController
 //
 //         return Ok(selectedRole);
 //     }
+
+
+    [HttpGet("3")]
+    public IActionResult Test2()
+    {
+        var request = Request;
+        var userAgent = request.Headers.UserAgent.ToString();
+        var clientIpAddress = HttpContext.Connection.RemoteIpAddress?.ToString();
+        var deviceInfo = new
+        {
+            UserAgent = userAgent,
+            Ip = clientIpAddress
+        };
+
+        return Ok(deviceInfo);
+    }
 }

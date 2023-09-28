@@ -7,40 +7,20 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\_Domain\_Domain.csproj" />
+        <ProjectReference Include="..\Authentication\Authentication.csproj"/>
+        <ProjectReference Include="..\CrossCuttingConcern\CrossCuttingConcern.csproj"/>
+        <ProjectReference Include="..\_Domain\_Domain.csproj"/>
     </ItemGroup>
 
     <ItemGroup>
-        <Folder Include="Features\Auth\" />
-        <Folder Include="Features\Roles\Constants\" />
-        <Folder Include="Features\SomeFeature\Commands\CreateSomeFeature\" />
-        <Folder Include="Features\SomeFeature\Constants\" />
-        <Folder Include="Features\SomeFeature\Profiles\" />
-        <Folder Include="Features\SomeFeature\Queries\" />
-        <Folder Include="Features\SomeFeature\Rules\" />
-        <Folder Include="Features\User\Constants\" />
-        <Folder Include="Features\User\Profiles\" />
-        <Folder Include="Features\User\Queries\" />
-        <Folder Include="Features\User\Rules\" />
+        <Folder Include="Features\Roles\Constants\"/>
+        <Folder Include="Features\Users\Queries\"/>
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.7.0" />
-        <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
-        <PackageReference Include="MediatR" Version="12.1.1" />
-        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.10" />
-        <PackageReference Include="NetCore.AutoRegisterDi" Version="2.1.0" />
-        <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-        <PackageReference Include="System.Linq.Dynamic.Core" Version="1.3.4" />
+        <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.11"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.11"/>
+        <PackageReference Include="System.Linq.Dynamic.Core" Version="1.3.5"/>
     </ItemGroup>
-
-    <ItemGroup>
-      <Reference Include="Microsoft.AspNetCore.Http.Abstractions">
-        <HintPath>..\..\..\..\..\..\usr\local\share\dotnet 7.0\shared\Microsoft.AspNetCore.App\7.0.5\Microsoft.AspNetCore.Http.Abstractions.dll</HintPath>
-      </Reference>
-      <Reference Include="Microsoft.Extensions.Localization.Abstractions">
-        <HintPath>..\..\..\..\..\..\usr\local\share\dotnet 7.0\shared\Microsoft.AspNetCore.App\7.0.5\Microsoft.Extensions.Localization.Abstractions.dll</HintPath>
-      </Reference>
-    </ItemGroup>
-
 </Project>

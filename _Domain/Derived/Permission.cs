@@ -2,13 +2,11 @@ using Domain.Bases;
 
 namespace Domain.Derived;
 
-public class Permission : BaseEntityWithEvent<int>
+public class Permission : BaseSystemEntity
 {
-    public string Name { get; set; }
+    public required string Name { get; set; }
 
-    public int RoleId { get; set; }
-    public Role Role { get; set; }
-
-    public int ModuleId { get; set; }
-    public Module Module { get; set; }
+    public required int ModuleId { get; set; }
+    public Module Module { get; set; } = null!;
+    public required int Order { get; set; }
 }

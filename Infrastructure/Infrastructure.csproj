@@ -12,11 +12,12 @@
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.10" />
-      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.10">
-        <PrivateAssets>all</PrivateAssets>
-        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-      </PackageReference>
-      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.10" />
+      <Folder Include="AutoLog\SeriLog\" />
+      <Folder Include="Email\" />
+      <Folder Include="Security\Token\Jwt\Models\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Elastic.Clients.Elasticsearch" Version="8.9.3" />
     </ItemGroup>
 </Project>

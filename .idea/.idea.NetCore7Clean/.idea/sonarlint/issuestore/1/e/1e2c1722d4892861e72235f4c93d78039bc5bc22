@@ -1,0 +1,5 @@
+
+lcsharpsquid:S927&"PRename parameter 'ct' to 'cancellationToken' to match the interface declaration.(º€ºÁ
+scsharpsquid:S4487"QRemove this unread private field '_mapper' or refactor the code to use its value.(…‰çÁÿÿÿÿÿ
+wcsharpsquid:S4487"URemove this unread private field '_hashHelper' or refactor the code to use its value.(¼úç«ıÿÿÿÿ
+scsharpsquid:S4487"VRemove this unread private field '_httpContext' or refactor the code to use its value.(×Ñç

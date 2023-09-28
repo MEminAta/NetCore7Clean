@@ -1,15 +1,17 @@
+using System.ComponentModel.DataAnnotations;
 using Domain.Bases;
 
 namespace Domain.Derived;
 
 public class User : BaseEntity<int>
 {
-    public string FirstName { get; set; }
-    public string LastName { get; set; }
-    public string Email { get; set; }
-    public byte[] Password { get; set; }
-    public byte[] Salt { get; set; }
+    public required string FirstName { get; set; }
+    public required string LastName { get; set; }
+    public required string Email { get; set; }
+    public required byte[] Password { get; set; }
+    public required byte[] Salt { get; set; }
+    public string? RefreshToken { get; set; }
 
     public int RoleId { get; set; }
-    public Role Role { get; set; }
+    public Role Role { get; set; } = null!;
 }

@@ -1,10 +1,23 @@
 {
   "version": 2,
-  "dgSpecHash": "FKZb4uJBblzlOz3sR2XL//ecGQ0J4GF+X3Qw8QSH4uR32fluFg1TJmXxnzvEKJdmcN92mUT5lunWCjJZ4N2xqw==",
+  "dgSpecHash": "H5QPYQD5nynwr388GZaRbcciFDPB5s5JVS7nqKR5b4xhlvSHQD0djgANJV3sEer45+9dRr57OFNBwCF8Xrjyvg==",
   "success": true,
   "projectFilePath": "/Users/atasayar/Desktop/Proje/NetCore7Clean/CrossCuttingConcern/CrossCuttingConcern.csproj",
   "expectedPackageFiles": [
-    "/Users/atasayar/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512"
+    "/Users/atasayar/.nuget/packages/fluentvalidation/11.7.1/fluentvalidation.11.7.1.nupkg.sha512",
+    "/Users/atasayar/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.7.1/fluentvalidation.dependencyinjectionextensions.11.7.1.nupkg.sha512",
+    "/Users/atasayar/.nuget/packages/mediatr/12.1.1/mediatr.12.1.1.nupkg.sha512",
+    "/Users/atasayar/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
+    "/Users/atasayar/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/7.0.11/microsoft.aspnetcore.authentication.jwtbearer.7.0.11.nupkg.sha512",
+    "/Users/atasayar/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
+    "/Users/atasayar/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/6.0.0/microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "/Users/atasayar/.nuget/packages/microsoft.identitymodel.jsonwebtokens/6.15.1/microsoft.identitymodel.jsonwebtokens.6.15.1.nupkg.sha512",
+    "/Users/atasayar/.nuget/packages/microsoft.identitymodel.logging/6.15.1/microsoft.identitymodel.logging.6.15.1.nupkg.sha512",
+    "/Users/atasayar/.nuget/packages/microsoft.identitymodel.protocols/6.15.1/microsoft.identitymodel.protocols.6.15.1.nupkg.sha512",
+    "/Users/atasayar/.nuget/packages/microsoft.identitymodel.protocols.openidconnect/6.15.1/microsoft.identitymodel.protocols.openidconnect.6.15.1.nupkg.sha512",
+    "/Users/atasayar/.nuget/packages/microsoft.identitymodel.tokens/6.15.1/microsoft.identitymodel.tokens.6.15.1.nupkg.sha512",
+    "/Users/atasayar/.nuget/packages/system.identitymodel.tokens.jwt/6.15.1/system.identitymodel.tokens.jwt.6.15.1.nupkg.sha512",
+    "/Users/atasayar/.nuget/packages/system.security.cryptography.cng/4.5.0/system.security.cryptography.cng.4.5.0.nupkg.sha512"
   ],
   "logs": []
 }

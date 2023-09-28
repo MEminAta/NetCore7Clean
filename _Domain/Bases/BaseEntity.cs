@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations.Schema;
 using Domain.Derived;
 
 namespace Domain.Bases;
@@ -9,13 +10,13 @@ public class BaseEntity<T> : BaseEntity where T : struct
 
 public class BaseEntity
 {
-    public int? UpdateByUserId { get; set; }
-    public User? UpdateByUser { get; set; }
-
+    [ForeignKey(nameof(UpdateUser))] public int? UpdateUserId { get; set; }
+    public User? UpdateUser { get; set; }
     public DateTime UpdateTime { get; set; }
 
-    public int? CreateByUserId { get; set; }
-    public User? CreateByUser { get; set; }
+    [ForeignKey(nameof(CreateUser))] public int? CreateUserId { get; set; }
+    public User? CreateUser { get; set; }
     public DateTime CreateTime { get; set; }
-    public bool IsActive { get; set; }
+
+    public bool IsDeleted { get; set; } = false;
 }

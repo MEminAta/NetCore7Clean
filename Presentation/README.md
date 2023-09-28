@@ -8,7 +8,7 @@ Project [Github Address](https://github.com/)
 Add Migration:
 
 ```bash
-dotnet ef migrations add <NAME> --project ../Infrastructure
+dotnet ef migrations add <NAME> --project ../Application
 ```
 
 <br>

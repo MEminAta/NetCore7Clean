@@ -1,5 +1,5 @@
 namespace Domain.Bases;
 
-public abstract class BaseEvent
+public class BaseEvent
 {
 }

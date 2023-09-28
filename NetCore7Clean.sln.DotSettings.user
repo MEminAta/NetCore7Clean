@@ -5,4 +5,23 @@
 	<s:String x:Key="/Default/Environment/Hierarchy/Build/BuildTool/DotNetCliExePath/@EntryValue">/usr/local/share/dotnet 7.0/dotnet</s:String>
 	<s:Boolean x:Key="/Default/Environment/Hierarchy/Build/BuildTool/RecentDotNetCliExePaths/=_002FUsers_002Fatasayar_002FDesktop_002FProje_002FNetCore7Clean_002FNetCore7Clean_002Esln/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/Environment/Hierarchy/Build/BuildTool/RecentDotNetCliExePaths/=_002Fusr_002Flocal_002Fshare_002Fdotnet_00207_002E0_002Fdotnet/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=Core_002FCrossCuttingConcern_002FGlobalization_002FLanguages_002FResources/@EntryIndexedValue">True</s:Boolean>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/Initialized/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/ShowComments/@EntryValue">False</s:Boolean>
 	</wpf:ResourceDictionary>
